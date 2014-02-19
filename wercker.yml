@@ -2,3 +2,8 @@ box: wercker/python
 build:
   steps:
     - validate-wercker-step
+    - virtualenv:
+        name: setup virtual environment
+    - script:
+        name: test run script
+        code: bash test.sh
