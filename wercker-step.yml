@@ -17,6 +17,10 @@ properties:
     type: string
     default: ""
     required: false
+  allow_external:
+    type: string
+    default: ""
+    required: false
   auto_run_wheel:
     type: boolean
     required: false

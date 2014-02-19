@@ -15,6 +15,9 @@ export WERCKER_PIP_INSTALL_REQUIREMENTS_FILE=""
 # Specify a nice and an ugly package
 export WERCKER_PIP_INSTALL_PACKAGES_LIST="mock py_w3c"
 
+# Allow external packages
+export WERCKER_PIP_ALLOW_EXTERNAL="$WERCKER_PIP_INSTALL_PACKAGES_LIST"
+
 # Run the script with several options
 export WERCKER_PIP_INSTALL_CLEANUP_WHEEL_CACHE="false"
 export WERCKER_PIP_INSTALL_AUTO_RUN_WHEEL="true"
