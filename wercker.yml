@@ -5,5 +5,8 @@ build:
     - virtualenv:
         name: setup virtual environment
     - script:
+        name: lint run script
+        code: bash -n run.sh
+    - script:
         name: test run script
         code: bash test.sh
