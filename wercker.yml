@@ -8,5 +8,8 @@ build:
         name: lint run script
         code: bash -n run.sh
     - script:
+        name: lint test script
+        code: bash -n test.sh
+    - script:
         name: test run script
-        code: bash test.sh
+        code: source test.sh
