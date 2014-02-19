@@ -56,7 +56,7 @@ if [ ${VIRTUAL_ENV} ]; then
 else
     echo "No virtual environment detected. Sudo will be used for pip install"
     info "Running pip install with sudo: sudo $WERCKER_PIP_INSTALL_PIP_COMMAND install $REQUIREMENTS_ARGS"
-    sudo -E $WERCKER_PIP_INSTALL_PIP_COMMAND install $REQUIREMENTS_ARGS
+    sudo $WERCKER_PIP_INSTALL_PIP_COMMAND install $REQUIREMENTS_ARGS
 fi
 if [[ $? -ne 0 ]]
 then
