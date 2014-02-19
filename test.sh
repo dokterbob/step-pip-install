@@ -13,7 +13,7 @@ export WERCKER_PIP_INSTALL_ALLOW_UNVERIFIED="PIL py_w3c"
 export WERCKER_PIP_INSTALL_REQUIREMENTS_FILE=""
 
 # Specify a nice and an ugly package
-export WERCKER_PIP_INSTALL_PACKAGES_LIST="mock PIL"
+export WERCKER_PIP_INSTALL_PACKAGES_LIST="mock py_w3c"
 
 # Run the script with several options
 export WERCKER_PIP_INSTALL_CLEANUP_WHEEL_CACHE="false"
