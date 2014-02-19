@@ -1,5 +1,8 @@
 # Test the run.sh script
 
+# Activate debugging from here
+set -x
+
 # Default PIP command
 export WERCKER_PIP_INSTALL_PIP_COMMAND="pip"
 
@@ -28,3 +31,6 @@ source run.sh
 export WERCKER_PIP_INSTALL_CLEANUP_WHEEL_CACHE="false"
 export WERCKER_PIP_INSTALL_AUTO_RUN_WHEEL="false"
 source run.sh
+
+# Disable debugging
+set +x
