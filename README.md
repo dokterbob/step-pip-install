@@ -73,7 +73,7 @@ Allow installation of particular unverifiable packages using PIP_ALLOW_UNIVERIFE
 
 ```
     - pip-install:
-        allow_univerified: 'PIL'
+        allow_univerified: "PIL py_w3c"
 ```
 
 # License
