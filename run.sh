@@ -4,7 +4,6 @@ if ! hash $WERCKER_PIP_INSTALL_PIP_COMMAND 2>/dev/null; then
     fail "Pip command not found: $WERCKER_PIP_INSTALL_PIP_COMMAND"
 fi
 
-PIP_ALLOW_UNVERIFIED=
 if [ ${WERCKER_PIP_INSTALL_ALLOW_UNVERIFIED} ]; then
     info "Allowing unverified installation of: $WERCKER_PIP_INSTALL_ALLOW_UNVERIFIED"
     export PIP_ALLOW_UNVERIFIED=${WERCKER_PIP_INSTALL_ALLOW_UNVERIFIED}
