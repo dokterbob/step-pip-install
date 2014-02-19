@@ -15,16 +15,16 @@ export WERCKER_PIP_INSTALL_PACKAGES_LIST="mock PIL"
 # Run the script with several options
 env WERCKER_PIP_INSTALL_CLEANUP_WHEEL_CACHE="false" \
     WERCKER_PIP_INSTALL_AUTO_RUN_WHEEL="true" \
-    source "$WERCKER_STEP_ROOT/run.sh"
+    bash "$WERCKER_STEP_ROOT/run.sh"
 
 env WERCKER_PIP_INSTALL_CLEANUP_WHEEL_CACHE="true" \
     WERCKER_PIP_INSTALL_AUTO_RUN_WHEEL="true" \
-    source "$WERCKER_STEP_ROOT/run.sh"
+    bash "$WERCKER_STEP_ROOT/run.sh"
 
 env WERCKER_PIP_INSTALL_CLEANUP_WHEEL_CACHE="true" \
     WERCKER_PIP_INSTALL_AUTO_RUN_WHEEL="false" \
-    source "$WERCKER_STEP_ROOT/run.sh"
+    bash "$WERCKER_STEP_ROOT/run.sh"
 
 env WERCKER_PIP_INSTALL_CLEANUP_WHEEL_CACHE="false" \
     WERCKER_PIP_INSTALL_AUTO_RUN_WHEEL="false" \
-    source "$WERCKER_STEP_ROOT/run.sh"
+    bash "$WERCKER_STEP_ROOT/run.sh"
