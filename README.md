@@ -69,6 +69,13 @@ To run pip install, but with a clean up of the PIP_WHEEL_DIR:
         cleanup_wheel_dir: true
 ```
 
+Allow installation of particular unverifiable packages using PIP_ALLOW_UNIVERIFED:
+
+```
+    - pip-install:
+        allow_univerified: 'PIL'
+```
+
 # License
 
 The MIT License (MIT)

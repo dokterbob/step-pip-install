@@ -13,6 +13,10 @@ properties:
   pip_command:
     type: string
     default: "pip"
+  allow_unverified:
+    type: string
+    default: ""
+    required: false
   auto_run_wheel:
     type: boolean
     required: false
